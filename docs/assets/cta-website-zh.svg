@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="72" viewBox="0 0 288 72" role="img" aria-labelledby="title desc">
+  <title id="title">访问 Memmy 官网</title>
+  <desc id="desc">前往 memmy.cn</desc>
+  <rect x="1" y="1" width="286" height="70" rx="35" fill="#F1F8F7" stroke="#CCE0DB" stroke-width="2"/>
+  <circle cx="38" cy="36" r="22" fill="#DFF5EF"/>
+  <g fill="none" stroke="#11554A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="38" cy="36" r="12"/>
+    <path d="M26 36h24M38 24c3.2 3.3 5 7.4 5 12s-1.8 8.7-5 12c-3.2-3.3-5-7.4-5-12s1.8-8.7 5-12Z"/>
+  </g>
+  <text x="72" y="33" fill="#111D1C" font-family="Nunito, Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="19" font-weight="800">访问官网</text>
+  <text x="72" y="51" fill="#5F7772" font-family="Nunito, Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="12.5" font-weight="600" letter-spacing="0.5">MEMMY.CN</text>
+  <g fill="none" stroke="#5CBFAE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M247 28h12v12"/>
+    <path d="m247 40 12-12"/>
+  </g>
+</svg>

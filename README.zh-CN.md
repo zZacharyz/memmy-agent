@@ -8,16 +8,16 @@
   </a>
 </div>
 
+<p align="center">
+  <a href="https://memmy.cn/"><img src="docs/assets/cta-website-zh.svg" width="288" alt="访问 Memmy 官网"></a>
+  <a href="https://github.com/MemTensor/memmy-agent/releases/latest"><img src="docs/assets/cta-download-zh.svg" width="288" alt="从 GitHub Releases 下载最新版 Memmy"></a>
+</p>
+
 <h1 align="center">换 Agent，任务不断。</h1>
 
 <p align="center">
   Memmy 在本地保存项目目标、决定、约束和失败尝试。<br>
   当你切换到 Codex、Claude Code、Cursor 等 Agent 时，相关上下文会跟着任务一起过去。
-</p>
-
-<p align="center">
-  <a href="https://memmy.cn/"><img src="https://img.shields.io/badge/访问官网-Memmy.cn-0F766E?style=for-the-badge&amp;logo=safari&amp;logoColor=white" alt="访问 Memmy 官网"></a>
-  <a href="https://github.com/MemTensor/memmy-agent/releases/latest"><img src="https://img.shields.io/badge/GitHub-下载最新版-181717?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="从 GitHub Releases 下载最新版 Memmy"></a>
 </p>
 
 <p align="center">
