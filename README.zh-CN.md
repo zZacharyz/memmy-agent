@@ -92,6 +92,14 @@ Memmy 不只导入历史。根据 Agent 的原生扩展能力，它还可以在�
   </thead>
   <tbody>
     <tr>
+      <td><strong>DeepSeek Harness</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">✅<br><sub>原生插件</sub></td>
+      <td align="center">✅<br><sub>原生插件</sub></td>
+      <td align="center">✅<br><sub>会话接续</sub></td>
+    </tr>
+    <tr>
       <td><strong>Cursor</strong></td>
       <td align="center">✅<br><sub>自动发现</sub></td>
       <td align="center">✅<br><sub>首次 + 增量</sub></td>
