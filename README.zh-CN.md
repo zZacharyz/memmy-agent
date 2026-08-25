@@ -7,19 +7,6 @@
   </a>
 </div>
 <br>
-<br>
-<p align="center">
-    <a href="https://memmy.bot/docs/"><img src="https://img.shields.io/badge/Docs-Get--Start-006400?labelColor=gray&style=for-the-badge&logo=googledocs&logoColor=white" alt="Docs"></a>
-    <a href="https://github.com/MemTensor/memmy-agent/releases"><img src="https://img.shields.io/badge/News-ED8D45?labelColor=gray&style=for-the-badge&logo=applenews&logoColor=white" alt="applenews"></a>
-    <a href="docs/assets/wechat-code.png"><img src="https://img.shields.io/badge/WeCom-Memmy_社区-07C160?labelColor=gray&style=for-the-badge&logo=wechat&logoColor=white" alt="WeChat"></a>
-    <a href="https://x.com/Memmy_ai"><img src="https://img.shields.io/badge/Follow-Memmy-000000?labelColor=gray&style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
-</p>
-<p align="center">
-    <a href="https://memmy.cn/"><img src="docs/assets/cta-website-badge-zh.svg" width="138" height="28" alt="访问 Memmy 官网"></a>&ensp;<a href="https://github.com/MemTensor/memmy-agent/releases/latest"><img src="docs/assets/cta-release-badge-zh.svg" width="136" height="28" alt="从 GitHub Releases 下载最新版 Memmy"></a>
-</p>
-<p align="center">
-    <a href="https://www.producthunt.com/products/memmy?embed=true&amp;utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_campaign=badge-memmy-agent" target="_blank" rel="noopener noreferrer"><img alt="Memmy Agent - Let every AI remember the same you. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1203499&amp;theme=light&amp;period=daily&amp;t=1786083567983"></a>
-</p>
 
 <div align="center">
 
@@ -33,6 +20,19 @@
 
 </div>
 
+<p align="center">
+  <a href="https://memmy.cn/"><img src="docs/assets/cta-website-badge-zh.svg" width="138" height="28" alt="访问 Memmy 官网"></a>&ensp;<a href="https://github.com/MemTensor/memmy-agent/releases/latest"><img src="docs/assets/cta-release-badge-zh.svg" width="136" height="28" alt="从 GitHub Releases 下载最新版 Memmy"></a>
+</p>
+
+<p align="center">
+  <a href="https://memmy.bot/docs/"><img src="https://img.shields.io/badge/Docs-Get--Start-006400?labelColor=gray&style=for-the-badge&logo=googledocs&logoColor=white" alt="Docs"></a>
+  <a href="https://github.com/MemTensor/memmy-agent/releases"><img src="https://img.shields.io/badge/News-ED8D45?labelColor=gray&style=for-the-badge&logo=applenews&logoColor=white" alt="News"></a>
+  <a href="docs/assets/wechat-code.png"><img src="https://img.shields.io/badge/WeCom-Memmy_社区-07C160?labelColor=gray&style=for-the-badge&logo=wechat&logoColor=white" alt="Memmy 微信社区"></a>
+  <a href="https://x.com/Memmy_ai"><img src="https://img.shields.io/badge/Follow-Memmy-000000?labelColor=gray&style=for-the-badge&logo=x&logoColor=white" alt="关注 Memmy 的 X 账号"></a>
+</p>
+
+<p align="center"><img src="docs/assets/readme-section-divider.svg" width="100%" alt=""></p>
+
 <a id="what"></a>
 
 ## Memmy 是什么？
@@ -41,13 +41,21 @@ Memmy 是跨 Agent 的本地记忆与执行层。它让不同 AI 工具共享长
 
 ### 任务如何跨 Agent 接着做
 
-1. **记住**：整理目标、决定、偏好和失败尝试。
-2. **接力**：切换 Agent 时带上相关上下文。
-3. **继续**：沿用已有约束和进度执行。
+<div align="center">
+<table>
+  <tbody>
+    <tr>
+      <td align="center" width="33%"><strong>01 · 记住</strong><br><sub>整理目标、决定、偏好和失败尝试</sub></td>
+      <td align="center" width="34%"><strong>02 · 接力</strong><br><sub>切换 Agent 时带上相关上下文</sub></td>
+      <td align="center" width="33%"><strong>03 · 继续</strong><br><sub>沿用已有约束和进度执行</sub></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <p align="center">
   <a href="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/cross-agent-relay-demo-zh.mp4">
-    <img src="docs/assets/cross-agent-relay-demo-cover-zh.webp" width="900" alt="点击观看 Memmy 跨 Agent 任务接力完整视频">
+    <img src="docs/assets/cross-agent-relay-demo-cover-zh.webp" width="880" alt="点击观看 Memmy 跨 Agent 任务接力完整视频">
   </a>
 </p>
 
@@ -56,7 +64,9 @@ Memmy 是跨 Agent 的本地记忆与执行层。它让不同 AI 工具共享长
   <a href="#how">完成你的第一次跨 Agent 接力</a>
 </p>
 
-> README 仅加载轻量封面；点击即可观看完整视频。
+<p align="center"><sub>README 仅加载轻量封面，点击即可观看完整视频。</sub></p>
+
+<p align="center"><img src="docs/assets/readme-section-divider.svg" width="100%" alt=""></p>
 
 <a id="why"></a>
 
@@ -78,17 +88,17 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
 <table>
   <thead>
     <tr>
-      <th align="left">Agent</th>
-      <th align="center">历史检测</th>
-      <th align="center">历史导入</th>
-      <th align="center">自动召回</th>
-      <th align="center">自动写入</th>
-      <th align="center">继续任务</th>
+      <th align="center" width="25%">Agent</th>
+      <th align="center" width="15%">历史检测</th>
+      <th align="center" width="15%">历史导入</th>
+      <th align="center" width="15%">自动召回</th>
+      <th align="center" width="15%">自动写入</th>
+      <th align="center" width="15%">继续任务</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>DeepSeek Harness</strong></td>
+      <td align="center"><strong>DeepSeek Harness</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">✅</td>
@@ -96,7 +106,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
       <td align="center">✅</td>
     </tr>
     <tr>
-      <td><strong>Cursor</strong></td>
+      <td align="center"><strong>Cursor</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">🧩</td>
@@ -104,7 +114,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
       <td align="center">✅</td>
     </tr>
     <tr>
-      <td><strong>Claude Code</strong></td>
+      <td align="center"><strong>Claude Code</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">✅</td>
@@ -112,7 +122,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
       <td align="center">✅</td>
     </tr>
     <tr>
-      <td><strong>Codex</strong></td>
+      <td align="center"><strong>Codex</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">✅</td>
@@ -120,7 +130,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
       <td align="center">✅</td>
     </tr>
     <tr>
-      <td><strong>OpenCode</strong></td>
+      <td align="center"><strong>OpenCode</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">✅</td>
@@ -128,7 +138,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
       <td align="center">✅</td>
     </tr>
     <tr>
-      <td><strong>OpenClaw</strong></td>
+      <td align="center"><strong>OpenClaw</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">✅</td>
@@ -136,7 +146,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
       <td align="center">✅</td>
     </tr>
     <tr>
-      <td><strong>Hermes</strong></td>
+      <td align="center"><strong>Hermes</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">✅</td>
@@ -144,15 +154,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
       <td align="center">✅</td>
     </tr>
     <tr>
-      <td><strong>WorkBuddy</strong></td>
-      <td align="center">✅</td>
-      <td align="center">✅</td>
-      <td align="center">🧩</td>
-      <td align="center">🧩</td>
-      <td align="center">🔄</td>
-    </tr>
-    <tr>
-      <td><strong>Pi</strong></td>
+      <td align="center"><strong>WorkBuddy</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">🧩</td>
@@ -160,7 +162,15 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
       <td align="center">🔄</td>
     </tr>
     <tr>
-      <td><strong>qwenwork</strong></td>
+      <td align="center"><strong>Pi</strong></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">🧩</td>
+      <td align="center">🧩</td>
+      <td align="center">🔄</td>
+    </tr>
+    <tr>
+      <td align="center"><strong>qwenwork</strong></td>
       <td align="center">✅</td>
       <td align="center">✅</td>
       <td align="center">🧩</td>
@@ -171,7 +181,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
 </table>
 </div>
 
-<p align="center"><sub>✅ 自动或原生支持　·　🧩 通过 Skill 按需执行　·　🔄 通过 Skill 接续任务</sub></p>
+<p align="center"><sub>✅ 自动或原生支持　　🧩 Skill 按需执行　　🔄 Skill 接续任务</sub></p>
 
 历史扫描负责导入；Hook、插件或 Skill 负责实时接入。来源路径与数据边界见 [Agent 来源与扫描](docs/cn/memory/sources.mdx)。
 
@@ -183,11 +193,7 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
   <a href="https://www.producthunt.com/products/memmy?embed=true&amp;utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_campaign=badge-memmy-agent"><img alt="Memmy Agent 获得 Product Hunt Product of the Day 第二名" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1203499&amp;theme=light&amp;period=daily&amp;t=1786083567983"></a>
 </p>
 
-<p align="center">
-  <a href="https://memmy.bot/docs/">文档</a> ·
-  <a href="docs/assets/wechat-code.png">微信社区</a> ·
-  <a href="https://x.com/Memmy_ai">X / Twitter</a>
-</p>
+<p align="center"><img src="docs/assets/readme-section-divider.svg" width="100%" alt=""></p>
 
 <a id="how"></a>
 
@@ -272,24 +278,50 @@ bash scripts/dev-start.sh
 
 完整安装和配置说明见 [入门指南](docs/cn/start/getting-started.mdx)。
 
+<p align="center"><img src="docs/assets/readme-section-divider.svg" width="100%" alt=""></p>
+
 <a id="architecture"></a>
 
 ## Memmy 如何工作？
 
 Memmy 将 Agent 历史整理为长期记忆，并按任务召回相关内容。Desktop、CLI 和 API 共享同一套 Memory 与 Agent Runtime。
 
-| 层级 | 负责什么 |
-| --- | --- |
-| 🧠 **Memory Layer** | 导入、存储、检索与溯源 |
-| 🤖 **Agent Runtime** | 模型、任务、工具、MCP 与 Skills |
-| 🔌 **Integration Layer** | 消息渠道、第三方服务与兼容 API |
-| 🖥️ **User Interface** | Desktop、CLI / TUI 与本地 Web |
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th align="center" width="34%">层级</th>
+      <th align="left" width="66%">负责什么</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center">🧠 <strong>Memory Layer</strong></td>
+      <td>导入、存储、检索与溯源</td>
+    </tr>
+    <tr>
+      <td align="center">🤖 <strong>Agent Runtime</strong></td>
+      <td>模型、任务、工具、MCP 与 Skills</td>
+    </tr>
+    <tr>
+      <td align="center">🔌 <strong>Integration Layer</strong></td>
+      <td>消息渠道、第三方服务与兼容 API</td>
+    </tr>
+    <tr>
+      <td align="center">🖥️ <strong>User Interface</strong></td>
+      <td>Desktop、CLI / TUI 与本地 Web</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <p align="center">
-  <img src="docs/assets/memmy-architecture-zh.png" alt="Memmy 系统架构：多个 Agent 和入口共享本地 Memory 与 Agent Runtime">
+  <img src="docs/assets/memmy-architecture-zh.png" width="920" alt="Memmy 系统架构：多个 Agent 和入口共享本地 Memory 与 Agent Runtime">
 </p>
 
 架构、记忆服务和接入方式的详细说明见 [Memmy 文档](https://memmy.bot/docs/)。
+
+<p align="center"><img src="docs/assets/readme-section-divider.svg" width="100%" alt=""></p>
 
 <a id="development"></a>
 
@@ -311,6 +343,8 @@ npm run test            # 运行测试
 - [报告问题或建议功能](https://github.com/MemTensor/memmy-agent/issues)
 - [查看和提交 Pull Request](https://github.com/MemTensor/memmy-agent/pulls)
 - [阅读项目文档](https://memmy.bot/docs/)
+
+<p align="center"><img src="docs/assets/readme-section-divider.svg" width="100%" alt=""></p>
 
 <a id="roadmap"></a>
 
