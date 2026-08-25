@@ -48,13 +48,13 @@ Memmy 是一层跨 Agent 共享的本地记忆底座，也提供建立在记忆�
 3. **继续完成任务**——带着已有决定、偏好和失败经验接着执行，而不是只生成一段摘要。
 
 <p align="center">
-  <a href="docs/assets/readme/cross-agent-relay-demo-zh.mp4">
+  <a href="docs/assets/readme/cross-agent-relay-demo-zh.mp4?raw=1">
     <img src="docs/assets/readme/cross-agent-relay-demo-cover-zh.webp" width="900" alt="点击观看 Memmy 跨 Agent 任务接力完整视频">
   </a>
 </p>
 
 <p align="center">
-  <a href="docs/assets/readme/cross-agent-relay-demo-zh.mp4">▶ 观看完整演示</a> ·
+  <a href="docs/assets/readme/cross-agent-relay-demo-zh.mp4?raw=1">▶ 观看完整演示</a> ·
   <a href="#how">完成你的第一次跨 Agent 接力</a>
 </p>
 
