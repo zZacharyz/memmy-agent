@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="138" height="28" viewBox="0 0 138 28" role="img" aria-labelledby="title">
+  <title id="title">访问 Memmy 官网</title>
+  <clipPath id="clip"><rect width="138" height="28" rx="3"/></clipPath>
+  <g clip-path="url(#clip)">
+    <rect width="138" height="28" fill="#5CBFAE"/>
+    <rect width="62" height="28" fill="#555555"/>
+  </g>
+  <g transform="translate(8 7)" fill="none" stroke="#FFFFFF" stroke-width="1.35" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="7" cy="7" r="6"/>
+    <path d="M1 7h12M7 1c1.55 1.65 2.35 3.65 2.35 6S8.55 11.35 7 13C5.45 11.35 4.65 9.35 4.65 7S5.45 2.65 7 1Z"/>
+  </g>
+  <text x="29" y="18" fill="#FFFFFF" font-family="Verdana, Arial, Helvetica, sans-serif" font-size="9" font-weight="700" letter-spacing="1">WEB</text>
+  <text x="75" y="18" fill="#102D29" font-family="Nunito, Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="10" font-weight="800" letter-spacing=".3">访问官网</text>
+</svg>

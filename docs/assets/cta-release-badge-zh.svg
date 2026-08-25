@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="28" viewBox="0 0 136 28" role="img" aria-labelledby="title">
+  <title id="title">下载最新版 Memmy</title>
+  <clipPath id="clip"><rect width="136" height="28" rx="3"/></clipPath>
+  <g clip-path="url(#clip)">
+    <rect width="136" height="28" fill="#11554A"/>
+    <rect width="70" height="28" fill="#555555"/>
+  </g>
+  <g transform="translate(8 6)" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7 1.5v9"/>
+    <path d="m3.5 7.5 3.5 3.5 3.5-3.5"/>
+    <path d="M1.5 14.5h11"/>
+  </g>
+  <text x="27" y="18" fill="#FFFFFF" font-family="Verdana, Arial, Helvetica, sans-serif" font-size="7.5" font-weight="700" letter-spacing=".75">RELEASE</text>
+  <text x="77" y="18" fill="#FFFFFF" font-family="Nunito, Noto Sans SC, PingFang SC, Microsoft YaHei, sans-serif" font-size="9.6" font-weight="800">下载最新版</text>
+</svg>
