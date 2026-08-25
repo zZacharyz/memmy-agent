@@ -1,5 +1,3 @@
-<a id="readme-top"></a>
-
 <br>
 <div align="center">
   <a href="https://memmy.cn/">
@@ -60,7 +58,6 @@ Memmy 是跨 Agent 的本地记忆与执行层。它让不同 AI 工具共享长
 
 > README 仅加载轻量封面；点击即可观看完整视频。
 
-<p align="right"><a href="#readme-top">↑ 返回导航</a></p>
 <a id="why"></a>
 
 ## 为什么选择 Memmy？
@@ -192,7 +189,6 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
   <a href="https://x.com/Memmy_ai">X / Twitter</a>
 </p>
 
-<p align="right"><a href="#readme-top">↑ 返回导航</a></p>
 <a id="how"></a>
 
 ## 如何使用 Memmy？
@@ -276,7 +272,6 @@ bash scripts/dev-start.sh
 
 完整安装和配置说明见 [入门指南](docs/cn/start/getting-started.mdx)。
 
-<p align="right"><a href="#readme-top">↑ 返回导航</a></p>
 <a id="architecture"></a>
 
 ## Memmy 如何工作？
@@ -296,7 +291,6 @@ Memmy 将 Agent 历史整理为长期记忆，并按任务召回相关内容。D
 
 架构、记忆服务和接入方式的详细说明见 [Memmy 文档](https://memmy.bot/docs/)。
 
-<p align="right"><a href="#readme-top">↑ 返回导航</a></p>
 <a id="development"></a>
 
 ## 开发与贡献
@@ -318,7 +312,6 @@ npm run test            # 运行测试
 - [查看和提交 Pull Request](https://github.com/MemTensor/memmy-agent/pulls)
 - [阅读项目文档](https://memmy.bot/docs/)
 
-<p align="right"><a href="#readme-top">↑ 返回导航</a></p>
 <a id="roadmap"></a>
 
 ## 路线图与致谢
@@ -338,5 +331,3 @@ npm run test            # 运行测试
     <img src="https://contrib.rocks/image?repo=MemTensor/memmy-agent" alt="Memmy 项目贡献者">
   </a>
 </p>
-
-<p align="right"><a href="#readme-top">↑ 返回导航</a></p>
