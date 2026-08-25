@@ -48,13 +48,13 @@ Memmy 是一层跨 Agent 共享的本地记忆底座，也提供建立在记忆�
 3. **继续完成任务**——带着已有决定、偏好和失败经验接着执行，而不是只生成一段摘要。
 
 <p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/readme/cross-agent-relay-demo-zh.mp4">
-    <img src="docs/assets/readme/cross-agent-relay-demo-cover-zh.webp" width="900" alt="点击观看 Memmy 跨 Agent 任务接力完整视频">
+  <a href="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/cross-agent-relay-demo-zh.mp4">
+    <img src="docs/assets/cross-agent-relay-demo-cover-zh.webp" width="900" alt="点击观看 Memmy 跨 Agent 任务接力完整视频">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/readme/cross-agent-relay-demo-zh.mp4">▶ 观看完整演示</a> ·
+  <a href="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/cross-agent-relay-demo-zh.mp4">▶ 观看完整演示</a> ·
   <a href="#how">完成你的第一次跨 Agent 接力</a>
 </p>
 
@@ -68,14 +68,10 @@ Memmy 是一层跨 Agent 共享的本地记忆底座，也提供建立在记忆�
 ### 三件事，让 Agent 真正接着做
 
 <p align="center">
-  <img src="docs/assets/readme/remember-zh.webp" width="31%" alt="Remember：Memmy 将分散的任务对话整理成长期记忆">
-  <img src="docs/assets/readme/relay-zh.webp" width="31%" alt="Relay：Memmy 在不同 Agent 之间传递相关任务上下文">
-  <img src="docs/assets/readme/act-zh.webp" width="31%" alt="Act：Memmy Agent Runtime 使用记忆继续执行任务">
+  <img src="docs/assets/memmy-feature-remember-zh.jpg" width="32%" alt="Remember：它记得你说过什么，自动把本机 AI 协作历史整理成结构化记忆">
+  <img src="docs/assets/memmy-feature-relay-zh.jpg" width="32%" alt="Relay：工具随便换，记忆不掉线，Memmy 会带上项目背景、偏好和进度">
+  <img src="docs/assets/memmy-feature-act-zh.jpg" width="32%" alt="Act：Memmy 本身也是一个 Agent，可以整理资料、合并方案并继续未完成的任务">
 </p>
-
-| **Remember｜它记得你说过什么** | **Relay｜换工具，记忆不掉线** | **Act｜不只记得，还能继续做** |
-| --- | --- | --- |
-| 自动读取本地 AI 协作历史，把项目目标、偏好、技术决定和失败尝试整理成结构化记忆。 | 在不同 Agent 中检索同一份相关记忆，让任务从已有进度继续，而不是重新开始。 | 通过本地 Agent Runtime、Skills 和 MCP 调用工具，把恢复的上下文继续变成行动和结果。 |
 
 ### 你正在用的 Agent，大多已经能接入
 
