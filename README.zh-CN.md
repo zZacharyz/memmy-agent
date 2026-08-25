@@ -65,9 +65,9 @@ Memmy 是跨 Agent 的本地记忆与执行层。它让不同 AI 工具共享长
 ### 三件事，让 Agent 真正接着做
 
 <p align="center">
-  <img src="docs/assets/memmy-feature-remember-large-zh.jpg" width="32%" alt="Remember：它记得你说过什么，自动把本机 AI 协作历史整理成结构化记忆">
+  <img src="docs/assets/memmy-feature-remember-clear-zh.jpg" width="32%" alt="Remember：它记得你说过什么，自动把本机 AI 协作历史整理成结构化记忆">
   <img src="docs/assets/memmy-feature-relay-large-zh.jpg" width="32%" alt="Relay：工具随便换，记忆不掉线，Memmy 会带上项目背景、偏好和进度">
-  <img src="docs/assets/memmy-feature-act-large-zh.jpg" width="32%" alt="Act：Memmy 本身也是一个 Agent，可以整理资料、合并方案并继续未完成的任务">
+  <img src="docs/assets/memmy-feature-act-clear-zh.jpg" width="32%" alt="Act：Memmy 本身也是一个 Agent，可以整理资料、合并方案并继续未完成的任务">
 </p>
 
 ### 你正在用的 Agent，大多已经能接入
