@@ -38,15 +38,13 @@
 
 ## Memmy 是什么？
 
-Memmy 是一层跨 Agent 共享的本地记忆底座，也提供建立在记忆之上的 Agent Runtime。它让不同 AI 工具使用同一份与你和项目相关的长期上下文。
+Memmy 是跨 Agent 的本地记忆与执行层。它让不同 AI 工具共享长期上下文，并通过 Agent Runtime 继续任务。
 
-### 看看 Memmy 如何让任务跨 Agent 接着做
+### 任务如何跨 Agent 接着做
 
-一个 Agent 已经知道你的目标、约束和踩过的坑。换到另一个 Agent 后，你不需要再从头解释：
-
-1. **记住已有工作**——把散落在不同 Agent 中的任务上下文整理为可检索的长期记忆。
-2. **恢复相关上下文**——新 Agent 开始工作前，召回与当前任务真正相关的信息。
-3. **继续完成任务**——带着已有决定、偏好和失败经验接着执行，而不是只生成一段摘要。
+1. **记住**：整理目标、决定、偏好和失败尝试。
+2. **接力**：切换 Agent 时带上相关上下文。
+3. **继续**：沿用已有约束和进度执行。
 
 <p align="center">
   <a href="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/cross-agent-relay-demo-zh.mp4">
@@ -59,7 +57,7 @@ Memmy 是一层跨 Agent 共享的本地记忆底座，也提供建立在记忆�
   <a href="#how">完成你的第一次跨 Agent 接力</a>
 </p>
 
-> 为保持 README 的加载速度，页面只加载轻量封面；点击后播放完整的跨 Agent 任务接力演示视频。
+> README 仅加载轻量封面；点击即可观看完整视频。
 
 <p align="right"><a href="#readme-top">↑ 返回导航</a></p>
 <a id="why"></a>
@@ -76,7 +74,7 @@ Memmy 是一层跨 Agent 共享的本地记忆底座，也提供建立在记忆�
 
 ### 你正在用的 Agent，大多已经能接入
 
-Memmy 不只导入历史。根据 Agent 的原生扩展能力，它还可以在新任务中召回相关记忆、写入完整回合，并把未完成的任务继续下去。
+Memmy 不只导入历史，也能召回、写入和接续任务；具体能力取决于 Agent 的接入方式。
 
 <div align="center">
 <table>
@@ -177,11 +175,11 @@ Memmy 不只导入历史。根据 Agent 的原生扩展能力，它还可以在�
 
 <p align="center"><sub>✅ 自动或原生支持　·　◐ 需要 Agent 主动调用 Skill　·　— 当前不自动执行</sub></p>
 
-历史扫描和实时接入是两件事。内置列表之外的 Agent 也可以通过历史发现和 Skill 接入；具体来源路径、安装方式和数据边界请查看 [Agent 来源与扫描](docs/cn/memory/sources.mdx)。
+历史扫描负责导入；Hook、插件或 Skill 负责实时接入。来源路径与数据边界见 [Agent 来源与扫描](docs/cn/memory/sources.mdx)。
 
 ### 本地优先，记忆由你控制
 
-记忆、配置和应用状态默认保存在本机。你可以查看记忆来源和调用日志，也可以导出或清空本地数据。模型和第三方工具是否访问网络取决于你选择的 Provider 与集成，具体边界见 [安全与隐私](docs/cn/security/security.mdx)。
+记忆、配置和应用状态默认保存在本机，可查看、导出或清空。网络边界取决于 Provider 与集成，详见 [安全与隐私](docs/cn/security/security.mdx)。
 
 <p align="center">
   <a href="https://www.producthunt.com/products/memmy?embed=true&amp;utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_campaign=badge-memmy-agent"><img alt="Memmy Agent 获得 Product Hunt Product of the Day 第二名" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1203499&amp;theme=light&amp;period=daily&amp;t=1786083567983"></a>
@@ -200,25 +198,23 @@ Memmy 不只导入历史。根据 Agent 的原生扩展能力，它还可以在�
 
 ### 完成你的第一次跨 Agent 接力
 
-这不是一次普通聊天测试。目标是验证：**换一个 Agent 后，它能否说出你已经确定了什么，并从正确的下一步继续。**
+目标：验证切换 Agent 后，能否恢复关键上下文并继续任务。
 
 1. 从 [GitHub Releases](https://github.com/MemTensor/memmy-agent/releases/latest) 下载并启动 Memmy 桌面端。
-2. 选择**账号模式**或 **API Key（BYOK）模式**，完成首次配置。
-3. 授权 Memmy 扫描已有 Agent 历史，等待生成个性化「初见报告」。
-4. 在报告下方选择「在 Codex / Claude Code / Cursor 等 Agent 中继续」，或复制接力指令后手动打开目标 Agent。
-5. 让目标 Agent 先说明已经确定的目标、约束和下一步，再继续执行任务。
+2. 选择**账号模式**或 **BYOK**，完成配置。
+3. 授权扫描 Agent 历史，生成「初见报告」。
+4. 选择「在某 Agent 中继续」，或复制接力指令。
+5. 确认目标 Agent 已恢复目标、约束和下一步，再继续任务。
 
 > [!TIP]
-> **成功标准：**目标 Agent 能恢复关键上下文；同时可在「记忆管理 → 调用日志」中看到对应的记忆访问。<br>
-> **没有接上：**检查「记忆管理 → 跨 Agent 接入」中的授权和 Hook / 插件 / Skill 状态，再查看 [Agent 来源与扫描](docs/cn/memory/sources.mdx) 与 [常见问题](docs/cn/help/faq.mdx)。
+> **成功：**目标 Agent 恢复关键上下文，调用日志出现对应记忆访问。<br>
+> **失败：**检查跨 Agent 授权与接入状态，再查看 [Agent 来源与扫描](docs/cn/memory/sources.mdx) 和 [常见问题](docs/cn/help/faq.mdx)。
 
-账号模式注册后会获得 Agent 任务体验 Token，当前额度和使用情况以应用内显示为准；额度用尽后可以切换到 BYOK，继续使用自己的模型 API。
+账号模式赠送体验 Token；额度以应用内为准，用尽后可切换 BYOK。
 
-### 选择适合你的入口
+### 桌面端（推荐）
 
-### 桌面端：最快完成首次接力
-
-桌面端会引导你完成账号或 BYOK 配置、历史扫描和 Agent 接入，并负责启动匹配的本地 Memory 服务与 Agent Gateway。当前桌面安装包支持 macOS 和 Windows。
+桌面端负责配置、历史扫描、Agent 接入及本地服务启动，支持 macOS 和 Windows。
 
 <details>
 <summary><strong>使用 <code>memmy</code> CLI / TUI</strong></summary>
@@ -249,7 +245,7 @@ providers:
 <details>
 <summary><strong>使用 <code>memmy-memory</code> CLI</strong></summary>
 
-供外部 Agent、脚本和调试流程直接访问本地记忆服务：
+供 Agent、脚本和调试流程访问本地记忆服务：
 
 ```bash
 memmy-memory init
@@ -259,7 +255,7 @@ memmy-memory add "这是一条需要保存的知识"
 memmy-memory get <id>
 ```
 
-默认连接 `http://127.0.0.1:18960`，可使用 `--url`、`--token`、`--config`、`--source` 和 `--user-id` 指定目标服务与命名空间。
+默认连接 `http://127.0.0.1:18960`；可用 `--url`、`--token`、`--config`、`--source` 和 `--user-id` 指定服务与命名空间。
 
 </details>
 
@@ -273,7 +269,7 @@ cp .env.example .env
 bash scripts/dev-start.sh
 ```
 
-`scripts/dev-start.sh` 会安装依赖、构建 Memory 与 Agent Runtime，并启动桌面开发所需的本地服务。源码路径要求 Node.js `>=22` 和 npm；Windows 请在 Git Bash 中运行。
+脚本会安装依赖、构建服务并启动开发环境。需要 Node.js `>=22` 和 npm；Windows 请使用 Git Bash。
 
 </details>
 
@@ -284,14 +280,14 @@ bash scripts/dev-start.sh
 
 ## Memmy 如何工作？
 
-Memmy 从已授权的 Agent 历史中提取完整对话回合，建立可检索的长期记忆，并在后续任务中只召回相关内容。Desktop、CLI 和 API 等入口共享同一套 Memory 与 Agent Runtime。
+Memmy 将 Agent 历史整理为长期记忆，并按任务召回相关内容。Desktop、CLI 和 API 共享同一套 Memory 与 Agent Runtime。
 
 | 层级 | 负责什么 |
 | --- | --- |
-| 🧠 **Memory Layer** | 历史导入、长期记忆、检索、来源追踪与本地管理 |
-| 🤖 **Agent Runtime** | 模型调用、任务编排、工具调用、MCP、Skills 与会话管理 |
-| 🔌 **Integration Layer** | 连接消息渠道、第三方服务与 OpenAI 兼容 API |
-| 🖥️ **User Interface** | Desktop App、CLI / TUI 和本地 Web 接口 |
+| 🧠 **Memory Layer** | 导入、存储、检索与溯源 |
+| 🤖 **Agent Runtime** | 模型、任务、工具、MCP 与 Skills |
+| 🔌 **Integration Layer** | 消息渠道、第三方服务与兼容 API |
+| 🖥️ **User Interface** | Desktop、CLI / TUI 与本地 Web |
 
 <p align="center">
   <img src="docs/assets/memmy-architecture-zh.png" alt="Memmy 系统架构：多个 Agent 和入口共享本地 Memory 与 Agent Runtime">
@@ -304,7 +300,7 @@ Memmy 从已授权的 Agent 历史中提取完整对话回合，建立可检索�
 
 ## 开发与贡献
 
-仓库采用 npm workspaces 管理。在根目录安装依赖后，可以运行：
+仓库使用 npm workspaces。在根目录运行：
 
 ```bash
 npm install
@@ -315,7 +311,7 @@ npm run typecheck       # 类型检查
 npm run test            # 运行测试
 ```
 
-Memmy 最自然的社区贡献方向是“让更多 Agent 接得上”：Agent 适配器、Provider 兼容、系统支持、测试夹具、文档和翻译都很有价值。
+欢迎贡献 Agent 适配器、Provider、系统支持、测试、文档和翻译。
 
 - [报告问题或建议功能](https://github.com/MemTensor/memmy-agent/issues)
 - [查看和提交 Pull Request](https://github.com/MemTensor/memmy-agent/pulls)
@@ -326,13 +322,13 @@ Memmy 最自然的社区贡献方向是“让更多 Agent 接得上”：Agent �
 
 ## 路线图与致谢
 
-Memmy 正在建设个人记忆基础设施，下一步包括更多本地记忆来源、更完整的 Agent 接入，以及在隐私边界内探索团队协作。
+下一步：更多本地记忆来源、更完整的 Agent 接入，以及隐私边界内的团队协作。
 
-项目受到以下开源实践的启发：
+灵感来自：
 
-- **[OpenClaw](https://github.com/openclaw/openclaw)**——多平台消息渠道与本地个人 Agent。
-- **[hermes-agent](https://github.com/NousResearch/hermes-agent)**——持久记忆、技能与 Agent 自我改进。
-- **[nanobot](https://github.com/HKUDS/nanobot)**——精简 Agent 循环与 MCP 集成实践。
+- **[OpenClaw](https://github.com/openclaw/openclaw)**：多平台、本地 Agent。
+- **[hermes-agent](https://github.com/NousResearch/hermes-agent)**：持久记忆与技能。
+- **[nanobot](https://github.com/HKUDS/nanobot)**：精简 Agent 循环与 MCP。
 
 感谢每一位让 Memmy 变得更好的贡献者 ❤️
 
