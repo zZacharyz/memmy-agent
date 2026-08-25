@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1662" height="1080" viewBox="0 0 1662 1080" role="img" aria-labelledby="title description">
+  <title id="title">Memmy 跨 Agent 任务接力演示</title>
+  <desc id="description">Memmy，同一个任务，在不同 Agent 之间接续完成</desc>
+  <rect width="1662" height="1080" fill="#000000"/>
+  <g fill="#FFFFFF" text-anchor="middle">
+    <text x="831" y="492" font-family="Georgia, Times New Roman, serif" font-size="64" font-weight="500" letter-spacing="1.4">Memmy</text>
+    <text x="831" y="594" font-family="Songti SC, STSong, STHeiti, serif" font-size="50" font-weight="400" letter-spacing="0.5">同一个任务，在不同Agent之间接续完成</text>
+  </g>
+</svg>
