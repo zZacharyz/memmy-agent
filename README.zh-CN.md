@@ -1,38 +1,39 @@
 <a id="readme-top"></a>
 
+<br>
 <div align="center">
   <a href="https://memmy.cn/">
     <picture>
-      <img alt="Memmy：让每个 AI 都记得同一个你" src="docs/assets/banner-zh.png">
+      <img alt="Memmy Logo" src="docs/assets/banner-zh.png">
     </picture>
   </a>
 </div>
-
+<br>
+<br>
 <p align="center">
-  <a href="https://memmy.cn/"><img src="docs/assets/cta-website-zh.svg" width="288" alt="访问 Memmy 官网"></a>
-  <a href="https://github.com/MemTensor/memmy-agent/releases/latest"><img src="docs/assets/cta-download-zh.svg" width="288" alt="从 GitHub Releases 下载最新版 Memmy"></a>
+    <a href="https://memmy.bot/docs/"><img src="https://img.shields.io/badge/Docs-Get--Start-006400?labelColor=gray&style=for-the-badge&logo=googledocs&logoColor=white" alt="Docs"></a>
+    <a href="https://github.com/MemTensor/memmy-agent/releases"><img src="https://img.shields.io/badge/News-ED8D45?labelColor=gray&style=for-the-badge&logo=applenews&logoColor=white" alt="applenews"></a>
+    <a href="docs/assets/wechat-code.png"><img src="https://img.shields.io/badge/WeCom-Memmy_社区-07C160?labelColor=gray&style=for-the-badge&logo=wechat&logoColor=white" alt="WeChat"></a>
+    <a href="https://x.com/Memmy_ai"><img src="https://img.shields.io/badge/Follow-Memmy-000000?labelColor=gray&style=for-the-badge&logo=x&logoColor=white" alt="X"></a>
+    <a href="https://memmy.cn/"><img src="docs/assets/cta-website-zh.svg" width="128" height="28" alt="访问 Memmy 官网"></a>
+    <a href="https://github.com/MemTensor/memmy-agent/releases/latest"><img src="docs/assets/cta-download-zh.svg" width="140" height="28" alt="从 GitHub Releases 下载最新版 Memmy"></a>
+</p>
+<p align="center">
+    <a href="https://www.producthunt.com/products/memmy?embed=true&amp;utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_campaign=badge-memmy-agent" target="_blank" rel="noopener noreferrer"><img alt="Memmy Agent - Let every AI remember the same you. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=1203499&amp;theme=light&amp;period=daily&amp;t=1786083567983"></a>
 </p>
 
-<h1 align="center">换 Agent，任务不断。</h1>
+<div align="center">
 
-<p align="center">
-  Memmy 在本地保存项目目标、决定、约束和失败尝试。<br>
-  当你切换到 Codex、Claude Code、Cursor 等 Agent 时，相关上下文会跟着任务一起过去。
-</p>
+## 让你的工作在 WorkBuddy、Claude Code 和 Codex 等 Agent 之间接着做。
 
-<p align="center">
-  <a href="README.md">English</a> · <strong>简体中文</strong>
-</p>
+</div>
 
-<p align="center">
-  <a href="#what">Memmy 是什么</a> ·
-  <a href="#why">为什么选择 Memmy</a> ·
-  <a href="#how">如何使用 Memmy</a> ·
-  <a href="#architecture">Memmy 如何工作</a> ·
-  <a href="#development">开发与贡献</a>
-</p>
+<div align="center">
 
-<p align="right"><a href="#readme-top">↑ 返回导航</a></p>
+[English](README.md) • **简体中文**
+
+</div>
+
 <a id="what"></a>
 
 ## Memmy 是什么？
