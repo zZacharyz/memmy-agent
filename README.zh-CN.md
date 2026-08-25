@@ -46,7 +46,7 @@ Memmy 是跨 Agent 的本地记忆与执行层。它让不同 AI 工具共享长
 <table align="center">
   <tr align="center" valign="middle">
     <td width="100%" valign="middle">
-      <video src="https://github.com/user-attachments/assets/c435eb8f-2fe4-452a-a359-2f3a181f5a7e" controls="controls" muted="muted" style="max-width: 100%;"></video>
+      <video src="https://github.com/user-attachments/assets/47f86214-76a2-4173-87d2-b89828ce464b" width="100%" controls playsinline></video>
     </td>
   </tr>
 </table>
