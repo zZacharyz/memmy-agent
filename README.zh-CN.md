@@ -45,9 +45,13 @@ Memmy 是跨 Agent 的本地记忆与执行层。它让不同 AI 工具共享长
 2. **接力**：切换 Agent 时带上相关上下文。
 3. **继续**：沿用已有约束和进度执行。
 
-<td>
-  <video src="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/cross-agent-relay-demo-zh.mp4" width="100%" controls autoplay loop muted playsinline></video>
-</td>
+<table align="center">
+  <tr align="center" valign="middle">
+    <td width="100%" valign="middle">
+      <video src="https://github.com/user-attachments/assets/c435eb8f-2fe4-452a-a359-2f3a181f5a7e" controls="controls" muted="muted" style="max-width: 100%;"></video>
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <a href="#how">完成你的第一次跨 Agent 接力</a>
