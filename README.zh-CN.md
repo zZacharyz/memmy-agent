@@ -89,89 +89,89 @@ Memmy 不只导入历史，也能召回、写入和接续任务；具体能力�
   <tbody>
     <tr>
       <td><strong>DeepSeek Harness</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">✅<br><sub>原生插件</sub></td>
-      <td align="center">✅<br><sub>原生插件</sub></td>
-      <td align="center">✅<br><sub>会话接续</sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
     </tr>
     <tr>
       <td><strong>Cursor</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">—<br><sub>Skill 按需</sub></td>
-      <td align="center">✅<br><sub>Hook</sub></td>
-      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">🧩</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
     </tr>
     <tr>
       <td><strong>Claude Code</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">✅<br><sub>Hook</sub></td>
-      <td align="center">✅<br><sub>Hook</sub></td>
-      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
     </tr>
     <tr>
       <td><strong>Codex</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">✅<br><sub>Hook</sub></td>
-      <td align="center">✅<br><sub>Hook</sub></td>
-      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
     </tr>
     <tr>
       <td><strong>OpenCode</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">✅<br><sub>原生插件</sub></td>
-      <td align="center">✅<br><sub>原生插件</sub></td>
-      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
     </tr>
     <tr>
       <td><strong>OpenClaw</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">✅<br><sub>Memory 插件</sub></td>
-      <td align="center">✅<br><sub>Memory 插件</sub></td>
-      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
     </tr>
     <tr>
       <td><strong>Hermes</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">✅<br><sub>Memory Provider</sub></td>
-      <td align="center">✅<br><sub>Memory Provider</sub></td>
-      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
     </tr>
     <tr>
       <td><strong>WorkBuddy</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">—<br><sub>Skill 按需</sub></td>
-      <td align="center">—<br><sub>Skill 按需</sub></td>
-      <td align="center">◐<br><sub>Skill 接续</sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">🧩</td>
+      <td align="center">🧩</td>
+      <td align="center">🔄</td>
     </tr>
     <tr>
       <td><strong>Pi</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">—<br><sub>Skill 按需</sub></td>
-      <td align="center">—<br><sub>Skill 按需</sub></td>
-      <td align="center">◐<br><sub>Skill 接续</sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">🧩</td>
+      <td align="center">🧩</td>
+      <td align="center">🔄</td>
     </tr>
     <tr>
       <td><strong>qwenwork</strong></td>
-      <td align="center">✅<br><sub>自动发现</sub></td>
-      <td align="center">✅<br><sub>首次 + 增量</sub></td>
-      <td align="center">—<br><sub>Skill 按需</sub></td>
-      <td align="center">—<br><sub>Skill 按需</sub></td>
-      <td align="center">◐<br><sub>Skill 接续</sub></td>
+      <td align="center">✅</td>
+      <td align="center">✅</td>
+      <td align="center">🧩</td>
+      <td align="center">🧩</td>
+      <td align="center">🔄</td>
     </tr>
   </tbody>
 </table>
 </div>
 
-<p align="center"><sub>✅ 自动或原生支持　·　◐ 需要 Agent 主动调用 Skill　·　— 当前不自动执行</sub></p>
+<p align="center"><sub>✅ 自动或原生支持　·　🧩 通过 Skill 按需执行　·　🔄 通过 Skill 接续任务</sub></p>
 
 历史扫描负责导入；Hook、插件或 Skill 负责实时接入。来源路径与数据边界见 [Agent 来源与扫描](docs/cn/memory/sources.mdx)。
 
