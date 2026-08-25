@@ -46,7 +46,7 @@ Memmy 是跨 Agent 的本地记忆与执行层。它让不同 AI 工具共享长
 <table align="center">
   <tr align="center" valign="middle">
     <td width="100%" valign="middle">
-      <video src="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/cross-agent-relay-demo-zh.mp4" poster="docs/assets/cross-agent-relay-demo-cover-zh.webp" controls="controls" muted="muted" playsinline="playsinline" style="max-width: 100%;"></video>
+      <a href="https://cdn.jsdelivr.net/gh/zZacharyz/memmy-agent@docs/readme-zh-promotion/docs/assets/cross-agent-relay-demo-zh.mp4"><img src="docs/assets/cross-agent-relay-demo-cover-zh.webp" width="100%" alt="观看 Memmy 跨 Agent 任务接力演示"></a>
     </td>
   </tr>
 </table>
