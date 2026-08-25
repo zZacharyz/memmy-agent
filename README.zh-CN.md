@@ -75,21 +75,100 @@ Memmy 是一层跨 Agent 共享的本地记忆底座，也提供建立在记忆�
 
 ### 你正在用的 Agent，大多已经能接入
 
-Memmy 可以导入九种内置 Agent 的本地历史。Hook 或插件负责新对话中的自动接入；不提供原生 Hook 的 Agent 则通过 Skill 按需使用共享记忆。
+Memmy 不只导入历史。根据 Agent 的原生扩展能力，它还可以在新任务中召回相关记忆、写入完整回合，并把未完成的任务继续下去。
 
-| Agent | 历史导入 | 后续接入方式 |
-| --- | :---: | --- |
-| Cursor | ✅ | Hook 自动采集，支持 `/memmy-resume` |
-| Claude Code | ✅ | Hook 自动召回与采集 |
-| Codex | ✅ | Hook 自动召回与采集 |
-| OpenCode | ✅ | 原生插件自动召回与采集 |
-| OpenClaw | ✅ | Memory 插件自动召回与采集 |
-| Hermes | ✅ | Memory Provider 插件自动召回与采集 |
-| WorkBuddy | ✅ | Skill 按需搜索、读取和写入 |
-| Pi | ✅ | Skill 按需搜索、读取和写入 |
-| qwenwork | ✅ | Skill 按需搜索、读取和写入 |
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th align="left">Agent</th>
+      <th align="center">历史检测</th>
+      <th align="center">历史导入</th>
+      <th align="center">自动召回</th>
+      <th align="center">自动写入</th>
+      <th align="center">继续任务</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cursor</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">—<br><sub>Skill 按需</sub></td>
+      <td align="center">✅<br><sub>Hook</sub></td>
+      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+    </tr>
+    <tr>
+      <td><strong>Claude Code</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">✅<br><sub>Hook</sub></td>
+      <td align="center">✅<br><sub>Hook</sub></td>
+      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+    </tr>
+    <tr>
+      <td><strong>Codex</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">✅<br><sub>Hook</sub></td>
+      <td align="center">✅<br><sub>Hook</sub></td>
+      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+    </tr>
+    <tr>
+      <td><strong>OpenCode</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">✅<br><sub>原生插件</sub></td>
+      <td align="center">✅<br><sub>原生插件</sub></td>
+      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+    </tr>
+    <tr>
+      <td><strong>OpenClaw</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">✅<br><sub>Memory 插件</sub></td>
+      <td align="center">✅<br><sub>Memory 插件</sub></td>
+      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+    </tr>
+    <tr>
+      <td><strong>Hermes</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">✅<br><sub>Memory Provider</sub></td>
+      <td align="center">✅<br><sub>Memory Provider</sub></td>
+      <td align="center">✅<br><sub><code>/memmy-resume</code></sub></td>
+    </tr>
+    <tr>
+      <td><strong>WorkBuddy</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">—<br><sub>Skill 按需</sub></td>
+      <td align="center">—<br><sub>Skill 按需</sub></td>
+      <td align="center">◐<br><sub>Skill 接续</sub></td>
+    </tr>
+    <tr>
+      <td><strong>Pi</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">—<br><sub>Skill 按需</sub></td>
+      <td align="center">—<br><sub>Skill 按需</sub></td>
+      <td align="center">◐<br><sub>Skill 接续</sub></td>
+    </tr>
+    <tr>
+      <td><strong>qwenwork</strong></td>
+      <td align="center">✅<br><sub>自动发现</sub></td>
+      <td align="center">✅<br><sub>首次 + 增量</sub></td>
+      <td align="center">—<br><sub>Skill 按需</sub></td>
+      <td align="center">—<br><sub>Skill 按需</sub></td>
+      <td align="center">◐<br><sub>Skill 接续</sub></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
-内置列表之外的 Agent 也可以通过历史发现和 Skill 接入。历史扫描与实时接入是两件事，具体路径、权限和行为请查看 [Agent 来源与扫描](docs/cn/memory/sources.mdx)。
+<p align="center"><sub>✅ 自动或原生支持　·　◐ 需要 Agent 主动调用 Skill　·　— 当前不自动执行</sub></p>
+
+历史扫描和实时接入是两件事。内置列表之外的 Agent 也可以通过历史发现和 Skill 接入；具体来源路径、安装方式和数据边界请查看 [Agent 来源与扫描](docs/cn/memory/sources.mdx)。
 
 ### 本地优先，记忆由你控制
 
